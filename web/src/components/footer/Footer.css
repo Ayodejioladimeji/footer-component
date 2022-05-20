@@ -1,0 +1,68 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 10px 30px 10px;
+    background: #0e0f1f;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+.footer p {
+    color: rgba(249, 249, 255, 0.35);
+    font-size: var(--font-smaller);
+    width: 50%;
+    text-align: center;
+}
+
+.footer small {
+    color: var(--light-color);
+    font-size: var(--font-mid);
+    display: block;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.footer-div {
+    width: 45%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-div a {
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+/* ========================================= */
+/* THE RESPONSIVENESS */
+/* ========================================= */
+@media (max-width: 1240px) {
+    .footer p {
+        width: 50%;
+    }
+
+    .footer-div {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer p {
+        width: 100%;
+    }
+
+    .footer-div {
+        width: 95%;
+    }
+}
+
+@media (max-width: 375px) {
+    .footer-div {
+        flex-direction: column;
+        line-height: 50px;
+    }
+}
